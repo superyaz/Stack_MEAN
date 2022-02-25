@@ -10,7 +10,9 @@ import { ListarProductosComponent } from './components/listar-productos/listar-p
 const routes: Routes = [
   { path: '', component: ListarProductosComponent }, 
   { path: 'crear-producto', component: CrearProductoComponent },
-  {path:'crear-producto/:id',component:CrearProductoComponent}
+  { path: 'crear-producto/:id', component: CrearProductoComponent },
+  { path: '**', redirectTo: '', pathMatch: 'full' }
+  
 ];
 
 @NgModule({
